@@ -4,13 +4,7 @@
 
 ## Usage
 
-1. Clone this repo
-
-```bash
-git clone https://github.com/ahoward2/federated-design-system
-```
-
-2. Start the remote app
+1. Start the remote app
 
 ```bash
 # dev-site-components PORT 3001
@@ -18,7 +12,7 @@ git clone https://github.com/ahoward2/federated-design-system
 yarn story
 ```
 
-3. Start the host app in another terminal
+2. Start the host app in another terminal
 
 ```bash
 # dev-site-host PORT 3002
