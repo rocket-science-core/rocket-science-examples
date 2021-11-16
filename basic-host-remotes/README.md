@@ -4,8 +4,6 @@
 
 ## Usage
 
-Clone all three applications onto your machine _(helpful to keep them in a common directory)_.
-
 - **dev-profiles-host** (HOST)
 - **dev-profile-one** (REMOTE)
 - **dev-profile-two** (REMOTE)
