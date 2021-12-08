@@ -10,13 +10,7 @@
 
 **To run the local development environment to consume modules from the local running remote apps:**
 
-1. Clone this repository and open a separate terminal session for each of the three apps.
-
-```bash
-git clone https://github.com/ahoward2/host-remotes-unpkg.git
-```
-
-2. Start up each REMOTE app
+1. Start up each REMOTE app
 
 ```bash
 # dev-profile-one
@@ -38,7 +32,7 @@ yarn story # to start federated server and storybook
 yarn federate # to only start the federated server
 ```
 
-3. Start up the HOST app with environment variable to use local modules
+2. Start up the HOST app with environment variable to use local modules
 
 ```bash
 # dev-profiles-host
