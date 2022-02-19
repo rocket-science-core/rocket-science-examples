@@ -13,6 +13,4 @@ function exposer() {
   return exposes;
 }
 
-exposer();
-
 module.exports = { exposer };
