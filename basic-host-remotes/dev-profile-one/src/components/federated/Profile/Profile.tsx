@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileWrapper from "./Profile.styles";
-import Link from "../Link";
+import Link from "../../Link";
 interface ProfileProps {}
 const Profile = ({}: ProfileProps) => {
   return (

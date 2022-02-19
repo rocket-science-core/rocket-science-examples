@@ -1,4 +1,5 @@
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
+const { exposer } = require("./src/util/exposer");
 
 const deps = require("./package.json").dependencies;
 module.exports = {
@@ -42,9 +43,7 @@ module.exports = {
       name: "DevProfileOne",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {
-        "./Profile": "./src/components/Profile",
-      },
+      exposes: exposer(),
       shared: {
         ...deps,
         react: {
