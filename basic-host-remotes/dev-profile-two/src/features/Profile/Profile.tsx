@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileWrapper from "./Profile.styles";
-import Link from "../../Link";
+import Link from "../../components/Link";
 interface ProfileProps {}
 const Profile = ({}: ProfileProps) => {
   return (
@@ -8,7 +8,7 @@ const Profile = ({}: ProfileProps) => {
       <div className="container">
         <div className="profile-header">
           <strong>
-            <span>Alex Wright</span>
+            <span>Austin Howard</span>
           </strong>
         </div>
         <div className="profile-summary">
@@ -18,7 +18,7 @@ const Profile = ({}: ProfileProps) => {
           </p>
         </div>
         <div className="profile-footer">
-          <Link text="github" href={"https://github.com/SketchLagoon"}></Link>
+          <Link text="github" href={"https://github.com/ahoward2"}></Link>
         </div>
       </div>
     </ProfileWrapper>

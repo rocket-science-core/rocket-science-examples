@@ -3,9 +3,7 @@ import React from "react";
 // import DynamicRemoteContainer from "./hooks/DynamicRemoteContainer";
 import AppWrapper from "./App.styles";
 const RemoteProfileOne = React.lazy(() => import("DevProfileOne/Profile"));
-// const RemoteProfileTwo = React.lazy(() => import("DevProfileTwo/Profile"));
-const Hello = React.lazy(() => import("DevProfileOne/Hello"));
-const World = React.lazy(() => import("DevProfileOne/World"));
+const RemoteProfileTwo = React.lazy(() => import("DevProfileTwo/Profile"));
 
 const App = () => (
   <AppWrapper>
@@ -16,14 +14,8 @@ const App = () => (
       <React.Suspense fallback="Loading Profile One">
         <RemoteProfileOne />
       </React.Suspense>
-      {/* <React.Suspense fallback="Loading Profile Two">
+      <React.Suspense fallback="Loading Profile Two">
         <RemoteProfileTwo />
-      </React.Suspense> */}
-      <React.Suspense fallback="Loading Hello">
-        <Hello />
-      </React.Suspense>
-      <React.Suspense fallback="Loading World">
-        <World />
       </React.Suspense>
 
       {/* <DynamicRemoteContainer
